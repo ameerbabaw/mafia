@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'KacstOneLocal';
+  src: url('/fonts/KacstOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'KacstOneLocal';
+  src: url('/fonts/KacstOne-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@theme {
+  --font-sans: 'Cairo', 'Tajawal', 'KacstOneLocal', 'KacstOne', sans-serif;
+}
+
+html, body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, p, span, div, a {
+  font-family: 'Cairo', 'Tajawal', 'KacstOneLocal', 'KacstOne', sans-serif !important;
+}
+
+body {
+  background-color: #09090b;
+  color: #f4f4f5;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e11d48;
+}
+
+/* Card 3D Perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Atmospheric glow & pulses */
+@keyframes mafia-pulse {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.28;
+    transform: scale(1.08);
+  }
+}
+
+.animate-mafia-glow {
+  animation: mafia-pulse 4s ease-in-out infinite;
+}

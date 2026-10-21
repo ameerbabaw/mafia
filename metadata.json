@@ -1,0 +1,6 @@
+{
+  "name": "لعبة المافيا العربية | Mafia Game",
+  "description": "لعبة المافيا العربية الكاملة أونلاين وأوفلاين من 3 لاعبين فأكثر مع غرف سريعة، بطاقات أدوار سرية، راوي صوتي آلي، ومؤثرات حماسية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
